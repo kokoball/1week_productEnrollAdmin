@@ -44,8 +44,8 @@ const ProductEnrollAdmin = () => {
     <>
       <S.Logo>Sir.LOIN</S.Logo>
       <S.PageWrapper>
-        <Gnb />
-        <S.Form onSubmit={(e) => e.preventDefault()}>
+        <Gnb /> {/* 좌측 메뉴 */}
+        {/* <S.Form onSubmit={(e) => e.preventDefault()}>
           <S.Title>
             상품 등록
             <Button
@@ -62,18 +62,18 @@ const ProductEnrollAdmin = () => {
               저장하기
             </Button>
           </S.Title>
-          <S.FormInner>
-            <SetPeriodTable />
-            <ProductionInformation />
-            <OptionTable />
-            <ProductImageTable />
-            <RecommendImageTable />
-            <ItemDeliverySetting />
-            <ItemInformationTable />
-            <ItemBenefitSetting />
-            <OtherSetting />
-          </S.FormInner>
-        </S.Form>
+          <S.FormInner> */}
+        {/* <SetPeriodTable />
+        <ProductionInformation />
+        <OptionTable /> */}
+        {/* <ProductImageTable />
+        <RecommendImageTable /> */}
+        <ItemDeliverySetting />
+        {/* <ItemInformationTable />
+        <ItemBenefitSetting />
+        <OtherSetting /> */}
+        {/* </S.FormInner>
+        </S.Form> */}
       </S.PageWrapper>
       <Modal isShowing={isShowing} close={toggle}>
         <SaveModal close={toggle} children={modalContents} />

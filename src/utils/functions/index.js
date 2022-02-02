@@ -40,6 +40,7 @@ export const checkValidation = (
   const { categories, productionName, productionDescribe } =
     productionInformation
   if (!Object.values(categories).some(({ checked }) => checked)) {
+    // Object.values or Object.keys
     console.log('카테고리 필수')
     return false
   }
